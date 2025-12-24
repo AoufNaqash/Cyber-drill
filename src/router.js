@@ -3,7 +3,8 @@ import { store } from './store';
 
 import Login from './views/login.vue';
 import Signup from './views/signup.vue';
-import Dashboard from './views/dashboard.vue';
+// import Dashboard from './views/Dashboard.vue';
+// again
 import Drills from './views/Drills.vue';
 import Results from './views/Results.vue';
 import CreateDrill from './views/CreateDrill.vue';
@@ -12,7 +13,10 @@ import DrillRes from './views/drillres.vue';
 import DrillStudents from './views/drill-students.vue';
 import StudentResult from './views/studentresult.vue';
 import Students from './views/students.vue';
+import Dashboard from './views/Dashboard.vue';
 
+println("router file updated");
+//update here
 const routes = [
   // Auth pages
   {
