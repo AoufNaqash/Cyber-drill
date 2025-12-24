@@ -14,9 +14,8 @@ import DrillStudents from './views/drill-students.vue';
 import StudentResult from './views/studentresult.vue';
 import Students from './views/students.vue';
 import Dashboard from './views/Dashboard.vue';
-
-println("router file updated");
-//update here
+// rmv
+//seriously
 const routes = [
   // Auth pages
   {
