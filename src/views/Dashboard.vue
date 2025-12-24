@@ -4,7 +4,7 @@ import { store } from '../store';
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
-
+//udpated
 // Derived Stats (visual-only: include color styles)
 const stats = computed(() => {
   const isTrainer = store.currentUser?.role === 'trainer';
