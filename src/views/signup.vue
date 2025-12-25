@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
+import Logo from '../assets/logo.jpg';
 
 const router = useRouter();
 
@@ -24,19 +25,16 @@ const handleSignup = () => {
 <template>
   <div class="w-full max-w-md bg-surface rounded-3xl p-10 shadow-2xl shadow-blue-500/10 auth-card">
     
-    <!-- Header -->
+    <!-- Logo + Header -->
     <div class="text-center mb-10">
-      <div
-        class="w-20 h-20 bg-gradient-primary rounded-3xl mx-auto mb-6 flex items-center justify-center text-white shadow-xl shadow-blue-500/20"
-      >
-        <svg class="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-          <circle cx="10" cy="7" r="4" />
-          <path d="M20 8v6" />
-          <path d="M23 11h-6" />
-        </svg>
-      </div>
-      <h1 class="text-3xl font-extrabold text-dark mb-2">Create Account</h1>
+      <img
+        :src="Logo"
+        alt="CyberDrill Logo"
+        class="w-20 h-20 mx-auto mb-6 object-contain"
+      />
+      <h1 class="text-3xl font-extrabold text-dark mb-2">
+        Create Account
+      </h1>
       <p class="text-gray-500">Join the training platform</p>
     </div>
 
@@ -45,7 +43,9 @@ const handleSignup = () => {
 
       <!-- Email -->
       <div>
-        <label class="block font-semibold text-sm text-dark mb-2">Email Address</label>
+        <label class="block font-semibold text-sm text-dark mb-2">
+          Email Address
+        </label>
         <div class="relative">
           <i class="fas fa-envelope absolute left-4 top-1/2 -translate-y-1/2 form-icon"></i>
           <input
@@ -60,7 +60,9 @@ const handleSignup = () => {
 
       <!-- Password -->
       <div>
-        <label class="block font-semibold text-sm text-dark mb-2">Password</label>
+        <label class="block font-semibold text-sm text-dark mb-2">
+          Password
+        </label>
         <div class="relative">
           <i class="fas fa-lock absolute left-4 top-1/2 -translate-y-1/2 form-icon"></i>
           <input
@@ -75,7 +77,9 @@ const handleSignup = () => {
 
       <!-- Confirm Password -->
       <div>
-        <label class="block font-semibold text-sm text-dark mb-2">Confirm Password</label>
+        <label class="block font-semibold text-sm text-dark mb-2">
+          Confirm Password
+        </label>
         <div class="relative">
           <i class="fas fa-lock absolute left-4 top-1/2 -translate-y-1/2 form-icon"></i>
           <input
@@ -90,7 +94,9 @@ const handleSignup = () => {
 
       <!-- Role Selection -->
       <div>
-        <label class="block font-semibold text-sm text-dark mb-3">Register As</label>
+        <label class="block font-semibold text-sm text-dark mb-3">
+          Register As
+        </label>
 
         <div class="grid grid-cols-2 gap-4">
           <button
@@ -120,7 +126,10 @@ const handleSignup = () => {
       </div>
 
       <!-- Error -->
-      <div v-if="error" class="error-text text-sm text-center font-medium">
+      <div
+        v-if="error"
+        class="error-text text-sm text-center font-medium"
+      >
         {{ error }}
       </div>
 
@@ -133,9 +142,13 @@ const handleSignup = () => {
     <!-- Footer -->
     <div class="mt-8 pt-6 border-t border-surface-border text-center text-muted text-sm">
       Already have an account?
-      <router-link to="/login" class="font-semibold text-primary hover:underline">
+      <router-link
+        to="/login"
+        class="font-semibold text-primary hover:underline"
+      >
         Login here
       </router-link>
     </div>
+
   </div>
 </template>
