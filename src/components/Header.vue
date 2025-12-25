@@ -1,5 +1,7 @@
 <script setup>
 import { store } from '../store';
+import Logo from '../assets/logo.jpg';
+
 </script>
 
 <template>
@@ -14,11 +16,16 @@ import { store } from '../store';
       </button>
 
       <div class="flex items-center gap-3">
-        <div class="w-14 h-14 bg-gradient-primary rounded-xl flex items-center justify-center text-white shadow-lg shadow-blue-500/20 logo-animate" title="CyberDrill">
-          <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L3 5v6c0 5 3.9 9.7 9 11 5.1-1.3 9-6 9-11V5l-9-3z"/></svg>
-        </div>
-        <span class="text-3xl font-extrabold text-dark tracking-tight brand-gradient brand-small">CyberDrill</span>
-      </div>
+  <img
+    :src="Logo"
+    alt="CyberDrill Logo"
+    class="w-14 h-14 object-contain"
+  />
+  <span class="text-3xl font-extrabold text-dark tracking-tight brand-gradient brand-small">
+    CyberDrill
+  </span>
+</div>
+
     </div>
     </div>
 
