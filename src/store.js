@@ -23,7 +23,7 @@ const initialResults = [
   { drillId: 1, student: 'Naqash Aouf', score: 85, maxScore: 100, date: '2024-01-21', feedback: 'Good identification', status: 'completed' },
   { drillId: 2, student: 'Naqash Aouf', score: 72, maxScore: 100, date: '2024-01-23', feedback: 'Needs improvement', status: 'completed' },
   // additional Naqash attempts for better chart demo
-  { drillId: 3, student: 'Naqash Aouf', score: 70, maxScore: 100, date: '2024-02-04', feedback: 'Okay, Work Hard', status: 'completed' },
+  { drillId: 3, student: 'Naqash Aouf', score: 71, maxScore: 100, date: '2024-02-04', feedback: 'Okay, Work Hard', status: 'completed' },
   { drillId: 1, student: 'Naqash Aouf', score: 92, maxScore: 100, date: '2024-02-18', feedback: 'Excellent', status: 'completed' },
   { drillId: 4, student: 'Naqash Aouf', score: 66, maxScore: 100, date: '2024-03-02', feedback: 'Needs practice', status: 'completed' },
   { drillId: 2, student: 'Naqash Aouf', score: 74, maxScore: 100, date: '2024-03-14', feedback: 'Improving', status: 'completed' },
